@@ -1,11 +1,13 @@
 import logging
 import re
 from datetime import datetime
+from keep_alive import keep_alive
+
 
 import requests
 import telebot
 from requests.exceptions import ReadTimeout
-
+keep_alive()
 # تنظیمات logging
 logging.basicConfig(level=logging.INFO)
 
